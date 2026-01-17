@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Sua Kim ✿ About</title>
+  <meta name="description" content="About Sua Kim."/>
+  <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+  <div class="dots"></div>
+  <div class="sparkles" id="sparkles"></div>
+
+  <header>
+    <div class="nav">
+      <a class="brand" href="index.html">
+        <div class="logo">✿</div>
+        <div>
+          <div class="name" id="siteTitle">Sua Kim ✿</div>
+          <div class="tiny" id="brandTiny"></div>
+        </div>
+      </a>
+
+      <div class="navlinks">
+        <a class="pill" data-nav href="about.html">🎀 About</a>
+        <a class="pill" data-nav href="projects.html">💗 Project shelf</a>
+        <a class="pill" data-nav href="resume.html">💌 Resume</a>
+        <a class="pill" data-nav href="currently.html">✨ Currently</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="grid">
+      <div class="card col-12">
+        <div class="inner">
+          <div class="kicker"><span class="sticker">🎀</span> About me</div>
+          <h1>My story</h1>
+          <div class="subtitle">education, personality, and the parts people don’t see on résumés</div>
+
+          <div class="grid" style="margin-top:18px">
+            <div class="card col-7">
+              <div class="inner">
+                <div class="kicker"><span class="sticker">📚</span> Education and how I learn</div>
+                <p class="p" id="aboutFull"></p>
+              </div>
+            </div>
+
+            <div class="card col-5">
+              <div class="inner">
+                <div class="kicker"><span class="sticker">🧁</span> Life polaroids</div>
+                <div class="polaroids">
+                  <div class="polaroid" style="--rot:-2.4deg">
+                    <div class="photo">flute and piccolo practice</div>
+                    <div class="cap">details until it clicks</div>
+                  </div>
+                  <div class="polaroid" style="--rot:1.7deg">
+                    <div class="photo">badminton and volleyball</div>
+                    <div class="cap">training arc energy</div>
+                  </div>
+                  <div class="polaroid" style="--rot:-1.1deg">
+                    <div class="photo">systems and routines</div>
+                    <div class="cap">calm over chaos</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="actions" style="margin-top:18px">
+            <a class="btn" id="linkedinBtn" href="#" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn" id="githubBtn" href="#" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn primary" id="resumeBtn" href="#" target="_blank" rel="noopener">Resume</a>
+          </div>
+
+          <div class="footer">
+            <div>© <span id="year"></span> Sua Kim</div>
+            <div style="font-family:var(--mono)">soft, not templated ✿</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast">Copied!</div>
+  <script src="assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Sua Kim ✿ Resume</title>
+  <meta name="description" content="Resume for Sua Kim."/>
+  <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+  <div class="dots"></div>
+  <div class="sparkles" id="sparkles"></div>
+
+  <header>
+    <div class="nav">
+      <a class="brand" href="index.html">
+        <div class="logo">✿</div>
+        <div>
+          <div class="name" id="siteTitle">Sua Kim ✿</div>
+          <div class="tiny" id="brandTiny"></div>
+        </div>
+      </a>
+
+      <div class="navlinks">
+        <a class="pill" data-nav href="about.html">🎀 About</a>
+        <a class="pill" data-nav href="projects.html">💗 Project shelf</a>
+        <a class="pill" data-nav href="resume.html">💌 Resume</a>
+        <a class="pill" data-nav href="currently.html">✨ Currently</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="grid">
+      <div class="card col-12">
+        <div class="inner">
+          <div class="kicker"><span class="sticker">💌</span> Resume</div>
+          <h1>Open my resume</h1>
+          <div class="subtitle">pdf link + preview</div>
+
+          <div class="actions">
+            <a class="btn primary" id="resumeLink" href="#" target="_blank" rel="noopener">Open PDF</a>
+            <a class="btn" href="projects.html">Back to projects</a>
+          </div>
+
+          <div class="card" style="margin-top:18px">
+            <div class="inner">
+              <div class="kicker"><span class="sticker">📄</span> Preview</div>
+              <p class="p">If the preview is blank on some browsers, just click Open PDF.</p>
+              <iframe id="resumeFrame" title="Resume preview" style="width:100%; height:680px; border:1px solid rgba(43,43,47,.12); border-radius:18px; background:rgba(255,255,255,.6)"></iframe>
+            </div>
+          </div>
+
+          <div class="footer">
+            <div>© <span id="year"></span> Sua Kim</div>
+            <div style="font-family:var(--mono)">update assets/Resume.pdf ✿</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

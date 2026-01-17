@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Sua's Website</title>
+  <title>Sua Kim — cute little corner</title>
   <meta name="description" content="A soft, scrapbook-style personal portfolio for Sua Kim."/>
   <style>
     :root{
@@ -446,62 +446,50 @@
     a, button { outline-color: rgba(255,182,217,.9); }
   </style>
 </head>
-
 <body>
   <div class="dots"></div>
   <div class="sparkles" id="sparkles"></div>
 
   <header>
     <div class="nav">
-      <a class="brand" href="#top">
-        <div class="logo" aria-hidden="true">✿</div>
+      <a class="brand" href="index.html">
+        <div class="logo">✿</div>
         <div>
           <div class="name">Sua Kim</div>
-          <div class="tiny">CS • music • sports • building my life into something exciting</div>
+          <div class="tiny">CS • music • sports • building my life into something calm</div>
         </div>
       </a>
 
       <div class="navlinks">
-        <a class="pill" href="#studio"><span class="heart">💗</span>Studio shelf</a>
-        <a class="pill" href="#life"><span class="heart">🎀</span>Life</a>
-        <a class="pill" href="#about"><span class="heart">✨</span>Full lore</a>
-        <a class="pill" href="#contact"><span class="heart">💌</span>Say hi</a>
+        <a class="pill" data-nav href="about.html">🎀 About</a>
+        <a class="pill" data-nav href="projects.html">💗 Project shelf</a>
+        <a class="pill" data-nav href="resume.html">💌 Resume</a>
+        <a class="pill" data-nav href="currently.html">✨ Currently</a>
       </div>
     </div>
   </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="card">
+  <main>
+    <section class="grid">
+      <div class="card col-12">
         <div class="inner">
-<<<<<<< HEAD
-          <h1 class="headline">✨Sua Kim✨</h1>
-          <div class="subtitle">Welcome to my little online scrapbook</div>
-=======
           <h1 class="headline">Hello Everyone! ✨</h1>
           <div class="subtitle">Welcome to my little scrapbook but it's </div>
->>>>>>> a17994a (Update multi page site)
           <p class="subhead" id="introText"></p>
 
           <div class="tagrow" id="tagrow"></div>
 
           <div class="actions">
-            <button class="btn primary" id="toggleLoreBtn" type="button">Switch to: Full lore</button>
             <button class="btn" id="copyEmailBtn" type="button">Copy email</button>
-            <a class="btn" id="githubBtn" href="https://github.com/Suakimgxx-one" target="_blank" rel="noopener">GitHub</a>
-            <a class="btn" id="linkedinBtn" href="https://www.linkedin.com/in/suakim1105" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="btn" id="resumeBtn" href="Resume.pdf" target="_blank" rel="noopener">Resume</a>
+            <a class="btn" id="githubBtn" href="#" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" id="linkedinBtn" href="#" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn primary" id="resumeBtn" href="#" target="_blank" rel="noopener">Resume</a>
           </div>
 
           <div class="divider"></div>
           <p class="note">
-            This site is a small window into who I am beyond labels. I am a Computer Science student at the University of Waterloo, 
-            but learning has never been just about code for me. I care deeply about understanding things clearly, 
-            especially in math, until they feel intuitive rather than intimidating. Outside of academics, 
-            I spend a lot of time practicing flute and piccolo and training in badminton and volleyball. 
-            Those parts of my life teach me discipline, patience, and consistency in a way that mirrors 
-            how I approach learning and building. I like routines that bring calm, systems that reduce chaos, 
-            and creating things such as music, tools, or habits that make life feel a little more intentional.
+            This site is me as a whole person: I build things, yes — but I also practice flute/piccolo,
+            train badminton/volleyball, and I’m obsessed with learning clearly (especially math).
           </p>
         </div>
       </div>
@@ -594,410 +582,28 @@
         </div>
       </div>
 
-      <div class="card col-5">
-        <div class="inner">
-          <div class="sectionTitle"><span class="sticker">🍓</span> Small highlights</div>
-          <div class="list" id="highlightsList"></div>
-        </div>
-      </div>
-    </section>
+            <div class="card col-5">
+              <div class="inner">
+                <div class="kicker"><span class="sticker">🫧</span> Where to next</div>
+                <div class="list">
+                  <a class="btn primary" href="about.html">Read my story</a>
+                  <a class="btn" href="projects.html">Visit the shelf</a>
+                  <a class="btn" href="currently.html">See what I’m doing</a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    <!-- ABOUT -->
-    <section id="about" class="grid">
-      <div class="card col-12">
-        <div class="inner">
-          <div class="sectionTitle"><span class="sticker">📖</span> About — full lore</div>
-          <p class="subhead" id="aboutText"></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="grid">
-      <div class="card col-12">
-        <div class="inner">
-          <div class="sectionTitle"><span class="sticker">💌</span> Say hi</div>
-          <p class="subhead" id="contactText"></p>
-
-          <div class="actions">
-            <a class="btn primary" id="emailBtn" href="#">Email me</a>
-            <a class="btn" id="githubBtn2" href="https://github.com/Suakimgxx-one" target="_blank" rel="noopener">GitHub</a>
-            <a class="btn" id="linkedinBtn2" href="https://www.linkedin.com/in/suakim1105" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="btn" id="resumeBtn2" href="Resume.pdf" target="_blank" rel="noopener">Resume</a>
+          <div class="footer">
+            <div>© <span id="year"></span> Sua Kim</div>
+            <div style="font-family:var(--mono)">multi page and calm ✿</div>
           </div>
         </div>
       </div>
     </section>
-
-    <div class="footer">
-      <div>© <span id="year"></span> Sua Kim • built like a scrapbook, not a template</div>
-      <div style="font-family:var(--mono)">edit the PROFILE object to customize ✿</div>
-    </div>
   </main>
 
   <div class="toast" id="toast">Copied!</div>
-
-  <script>
-    /************************************************************
-     * EDIT ME: Your content in one place
-     ************************************************************/
-    const PROFILE = {
-      name: "Sua Kim",
-      email: "suakim7514@gmail.com", // <-- change
-      links: {
-        github: "https://github.com/Suakimgxx-one",   // <-- change
-        linkedin: "https://www.linkedin.com/in/suakim1105", // <-- change
-        resume: "Resume.pdf" // <-- change
-      },
-
-      introQuick: [
-        "I’m Sua — a Waterloo CS student who likes building tools that make life calmer,",
-        "but also the kind of person who goes: class → practice → training → back to building again.",
-        "My thing is clarity, consistency, and a little sparkle ✨"
-      ].join(" "),
-      introLore: [
-        "I’m Sua — a Waterloo CS student, but my identity isn’t just tech. I’m also flute/piccolo practice,",
-        "badminton & volleyball training, and being the person who gets weirdly happy when a concept becomes crystal clear.",
-        "I build real-life tools (because I hate chaos), and I love learning in a structured way —",
-        "but I also love expressive things: music, movement, and aesthetics."
-      ].join(" "),
-
-      tags: [
-        { label: "student", value: "Waterloo CS" },
-        { label: "builder", value: "tools I actually use" },
-        { label: "music", value: "flute / piccolo" },
-        { label: "sports", value: "badminton / volleyball" },
-        { label: "brain", value: "clarity + systems" }
-      ],
-
-      miniAI: [
-        { q: "What’s Sua building lately?", a: "A little ‘life dashboard’ that matches how I study + reset weekly. I like tools that feel calm, pretty, and actually usable." },
-        { q: "Music side?", a: "Flute/piccolo is my craft. I love drilling details until it sounds effortless — same energy as debugging, honestly." },
-        { q: "Sporty side?", a: "Badminton/volleyball training keeps me grounded. I’m competitive but also disciplined — footwork reps = therapy." },
-        { q: "What does she care about?", a: "Clarity over complexity. Real users. Consistency. And building a life that feels organized but still cute." },
-        { q: "What’s her vibe in a team?", a: "Reliable + structured + thoughtful. I’ll keep things organized, but I’m also down for creative experiments." }
-      ],
-
-      projects: [
-        {
-          title: "School Hub App",
-          why: "I wanted students to find events/clubs/tutoring without digging through chaos.",
-          what: "A student hub platform used by 500+ users in high school.",
-          tags: ["Community", "Product thinking", "Web/App"],
-          links: { github: "", demo: "" }
-        },
-        {
-          title: "Vocabulary Game (Python / Pygame)",
-          why: "I like learning that feels playful — I wanted practice to feel addictive in a good way.",
-          what: "A vocabulary game for building word sophistication (without boredom).",
-          tags: ["Python", "Pygame", "Learning"],
-          links: { github: "", demo: "" }
-        },
-        {
-          title: "Waterloo Life Dashboard (current)",
-          why: "I wanted a personal system that feels like me (Notion is powerful but not always *me*).",
-          what: "A personal dashboard for study blocks, weekly resets, and course tasks.",
-          tags: ["HTML/CSS/JS", "Systems", "Daily use"],
-          links: { github: "", demo: "" }
-        }
-      ],
-
-      values: [
-        { title: "Clarity over complexity", desc: "If I can’t explain it simply, I don’t feel done yet — math, code, anything." },
-        { title: "Build for real life", desc: "I love projects that actually get used. Practical > performative." },
-        { title: "Consistency is cute", desc: "I’m routine-oriented. If something matters, I’ll turn it into a system." },
-        { title: "Well-rounded for real", desc: "I’m not only ‘CS.’ I’m also music practice and sports training — and I take them seriously." }
-      ],
-
-      highlights: [
-        { title: "Music", desc: "Flute / piccolo • practice like a craft • details matter." },
-        { title: "Sports", desc: "Badminton + volleyball • training mindset • competitive (softly)." },
-        { title: "Teaching energy", desc: "I genuinely enjoy explaining things clearly and helping people ‘get it.’" },
-        { title: "Builder mindset", desc: "I ship, iterate, and improve — I don’t like half-finished ideas." }
-      ],
-
-      about: [
-        "If you caught me on a random day, you’d probably see one of three modes:",
-        "• studying mode (systems, notes, clarity),",
-        "• building mode (making something I’ll actually use),",
-        "• or music/sports mode (practice + training).",
-        "",
-        "I’m a Waterloo CS student, but I don’t want my personality to be only ‘coding.’",
-        "I love being well-rounded in a real way — not a résumé way.",
-        "",
-        "I’m happiest when things feel clear and calm: a clean solution, a practiced passage,",
-        "a training session that makes me feel stronger, a plan that makes the week feel lighter.",
-        "",
-        "If you like thoughtful projects, good vibes, and people who care about doing things properly, say hi 💌"
-      ].join("\\n"),
-
-      contactBlurb:
-        "If you want to build something useful together — or you just want to say hi — I’m always down. Bonus points if you love music, sports, or pretty systems ✨"
-    };
-
-    /************************************************************
-     * Helpers
-     ************************************************************/
-    const $ = (sel) => document.querySelector(sel);
-    const $$ = (sel) => document.querySelectorAll(sel);
-
-    function toast(msg="Copied!"){
-      const t = $("#toast");
-      t.textContent = msg;
-      t.classList.add("show");
-      setTimeout(()=> t.classList.remove("show"), 1100);
-    }
-
-    function safeLink(aEl, url){
-      if(url && url.trim().length){
-        aEl.href = url;
-        aEl.classList.remove("disabled");
-        aEl.setAttribute("aria-disabled","false");
-      } else {
-        aEl.href = "#";
-        aEl.classList.add("disabled");
-        aEl.setAttribute("aria-disabled","true");
-      }
-    }
-
-    /************************************************************
-     * Cute floating sparkles
-     ************************************************************/
-    (function makeSparkles(){
-      const wrap = $("#sparkles");
-      const icons = ["✨","💗","🎀","⭐","🫧","🧁"];
-      const count = 22;
-      for(let i=0;i<count;i++){
-        const s = document.createElement("div");
-        s.className="sparkle";
-        s.textContent = icons[Math.floor(Math.random()*icons.length)];
-        s.style.left = (Math.random()*100)+"%";
-        s.style.top = (Math.random()*100)+"%";
-        s.style.animationDuration = (8 + Math.random()*10)+"s";
-        s.style.animationDelay = (-Math.random()*10)+"s";
-        wrap.appendChild(s);
-      }
-    })();
-
-    /************************************************************
-     * Render: Intro + tags + links
-     ************************************************************/
-    let loreMode = false;
-
-    function renderIntro(){
-      $("#introText").textContent = loreMode ? PROFILE.introLore : PROFILE.introQuick;
-      $("#toggleLoreBtn").textContent = loreMode ? "Switch to: Quick intro" : "Switch to: Full lore";
-
-      const tagrow = $("#tagrow");
-      tagrow.innerHTML = "";
-      PROFILE.tags.forEach(t=>{
-        const el = document.createElement("div");
-        el.className = "tag";
-        el.innerHTML = `<b>${t.label}</b>: ${t.value}`;
-        tagrow.appendChild(el);
-      });
-
-      // social links
-      safeLink($("#githubBtn"), PROFILE.links.github);
-      safeLink($("#linkedinBtn"), PROFILE.links.linkedin);
-      safeLink($("#githubBtn2"), PROFILE.links.github);
-      safeLink($("#linkedinBtn2"), PROFILE.links.linkedin);
-
-      // resume links (NEW)
-      safeLink($("#resumeBtn"), PROFILE.links.resume);
-      safeLink($("#resumeBtn2"), PROFILE.links.resume);
-
-      $("#emailBtn").href = `mailto:${PROFILE.email}`;
-      $("#contactText").textContent = PROFILE.contactBlurb;
-}
-
-
-    /************************************************************
-     * Render: Projects
-     ************************************************************/
-    function renderProjects(){
-      const list = $("#projectsList");
-      list.innerHTML = "";
-
-      PROFILE.projects.forEach(p=>{
-        const card = document.createElement("div");
-        card.className = "item";
-
-        const tags = p.tags.map(x=> `<span class="badge">${x}</span>`).join("");
-
-        card.innerHTML = `
-          <h3>${p.title}</h3>
-          <p><b>why:</b> ${p.why}</p>
-          <p><b>what it does:</b> ${p.what}</p>
-          <div class="meta">
-            ${tags}
-            <div class="links">
-              <a class="miniLink" data-kind="github" href="#" target="_blank" rel="noopener">GitHub</a>
-              <a class="miniLink" data-kind="demo" href="#" target="_blank" rel="noopener">Demo</a>
-            </div>
-          </div>
-        `;
-
-        const gh = card.querySelector('[data-kind="github"]');
-        const dm = card.querySelector('[data-kind="demo"]');
-        safeLink(gh, p.links.github);
-        safeLink(dm, p.links.demo);
-
-        list.appendChild(card);
-      });
-    }
-
-    /************************************************************
-     * Render: Values + Highlights
-     ************************************************************/
-    function renderValues(){
-      const v = $("#valuesList");
-      v.innerHTML = "";
-      PROFILE.values.forEach(x=>{
-        const el = document.createElement("div");
-        el.className = "item";
-        el.innerHTML = `<h3>${x.title}</h3><p>${x.desc}</p>`;
-        v.appendChild(el);
-      });
-
-      const h = $("#highlightsList");
-      h.innerHTML = "";
-      PROFILE.highlights.forEach(x=>{
-        const el = document.createElement("div");
-        el.className = "item";
-        el.innerHTML = `<h3>${x.title}</h3><p>${x.desc}</p>`;
-        h.appendChild(el);
-      });
-    }
-
-    /************************************************************
-     * Render: About
-     ************************************************************/
-    function renderAbout(){
-      $("#aboutText").textContent = PROFILE.about;
-    }
-
-    /************************************************************
-     * Mini AI chat
-     ************************************************************/
-    function addChatLine(who, text){
-      const box = $("#chatBox");
-      const div = document.createElement("div");
-      div.className = "line";
-      div.innerHTML = `<span class="prompt">${who}</span>: ${escapeHtml(text)}`;
-      box.appendChild(div);
-      box.scrollTop = box.scrollHeight;
-    }
-    function escapeHtml(str){
-      return str.replace(/[&<>"']/g, (m)=>({
-        "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"
-      }[m]));
-    }
-    const sleep = (ms)=> new Promise(r=>setTimeout(r, ms));
-
-    async function typeReply(text){
-      const box = $("#chatBox");
-      const div = document.createElement("div");
-      div.className = "line";
-      div.innerHTML = `<span class="prompt">page-fairy</span>: <span class="reply" id="typing"></span><span class="cursor" aria-hidden="true"></span>`;
-      box.appendChild(div);
-      box.scrollTop = box.scrollHeight;
-
-      const target = div.querySelector("#typing");
-      target.textContent = "";
-      $("#aiStatus").textContent = "thinking…";
-
-      for(let i=0;i<text.length;i++){
-        target.textContent += text[i];
-        if(i % 2 === 0) await sleep(12);
-      }
-      $("#aiStatus").textContent = "awake";
-    }
-
-    function renderChips(){
-      const wrap = $("#chips");
-      wrap.innerHTML = "";
-      PROFILE.miniAI.forEach((x)=>{
-        const b = document.createElement("button");
-        b.className = "chipbtn";
-        b.type = "button";
-        b.textContent = x.q;
-        b.addEventListener("click", async ()=>{
-          addChatLine("you", x.q);
-          await typeReply(x.a);
-        });
-        wrap.appendChild(b);
-      });
-    }
-
-    /************************************************************
-     * Now playing + mood rotating
-     ************************************************************/
-    const TRACKS = [
-      { track: "flute/piccolo practice • tone + phrasing", energy: "soft focus", mood: "Creative mode 🎼" },
-      { track: "coding sprint • making chaos calm", energy: "locked in", mood: "Building mode 🧁" },
-      { track: "badminton training • footwork + drives", energy: "training arc", mood: "Studying mode 📚" }
-    ];
-    let trackIndex = 0;
-    let manualMood = null;
-
-    function renderNowPlaying(){
-      const t = TRACKS[trackIndex % TRACKS.length];
-      $("#nowPlayingTrack").textContent = t.track;
-      $("#nowPlayingEnergy").textContent = t.energy;
-      $("#moodText").textContent = manualMood ?? t.mood;
-    }
-
-    function tickClock(){
-      const d = new Date();
-      const mm = String(d.getMinutes()).padStart(2,"0");
-      const ss = String(d.getSeconds()).padStart(2,"0");
-      $("#nowPlayingTime").textContent = `${mm}:${ss}`;
-    }
-
-    /************************************************************
-     * Events
-     ************************************************************/
-    $("#toggleLoreBtn").addEventListener("click", ()=>{
-      loreMode = !loreMode;
-      renderIntro();
-      toast(loreMode ? "Full lore on ✨" : "Quick intro on ✨");
-    });
-
-    $("#copyEmailBtn").addEventListener("click", async ()=>{
-      try{
-        await navigator.clipboard.writeText(PROFILE.email);
-        toast("Email copied 💌");
-      }catch(e){
-        toast("Copy blocked (use Live Server).");
-      }
-    });
-
-    $$(".chipbtn[data-mood]").forEach(btn=>{
-      btn.addEventListener("click", ()=>{
-        manualMood = btn.getAttribute("data-mood");
-        renderNowPlaying();
-        toast(`Mood: ${manualMood}`);
-      });
-    });
-
-    /************************************************************
-     * Init
-     ************************************************************/
-    function init(){
-      $("#year").textContent = new Date().getFullYear();
-      renderIntro();
-      renderProjects();
-      renderValues();
-      renderAbout();
-      renderChips();
-      renderNowPlaying();
-
-      setInterval(()=>{ trackIndex++; renderNowPlaying(); }, 7200);
-      setInterval(tickClock, 250);
-      tickClock();
-    }
-    init();
-  </script>
+  <script src="assets/site.js"></script>
 </body>
 </html>
